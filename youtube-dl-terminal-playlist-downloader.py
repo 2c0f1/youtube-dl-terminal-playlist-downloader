@@ -1,9 +1,9 @@
 import os
 n = ('\n')
 while True:
- url_youtube = input('entre com a url do youtube:'+n)
+ url_youtube = input('enter the youtube url:'+n)
  print ('baixando')
- os.chdir('/home/user/Downloads/Music')
+ path = os.chdir('/home/user/Downloads/Music')
  x = os.popen('youtube-dl --yes-playlist --extract-audio --audio-format mp3 '+url_youtube)
  print(x.read())
- print ('convertido para mp3'+n)
+ print ('converted to mp3'+n)
